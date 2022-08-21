@@ -1,0 +1,8 @@
+<div [ngClass]="{reminder: task.reminder}" class="task" (dblclick)="onUpdate(task)">
+    <h3>{{task.text}} 
+        <button class="btn" [ngStyle]="{'background-color':'red'}" (click)="onDelete(task)">
+            Delete
+        </button> 
+    </h3>    
+    <p>{{task.day}}</p>
+</div>
